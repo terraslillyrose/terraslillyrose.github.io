@@ -1,4 +1,4 @@
-export const DOMAIN = "gianmarcocavallo.com";
+export const DOMAIN = "https://portfolioterraslillyrose.netlify.app/";
 
 export const SITE = {
   site: {
@@ -6,11 +6,11 @@ export const SITE = {
     url: `https://${DOMAIN}/`,
   },
   author: {
-    firstName: "Gianmarco",
-    lastName: "Cavallo",
-    fullName: "Gianmarco Cavallo",
-    shortName: "Gianmarco",
-    jobTitle: "Freelance Full Stack Developer",
+    firstName: "Lilly-Rose",
+    lastName: "Terras",
+    fullName: "Lilly-Rose Terras",
+    shortName: "Lilly",
+    jobTitle: "student",
     twitterHandle: "gianmarcocavallo", // without "@"
   },
   location: {
