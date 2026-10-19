@@ -16,7 +16,7 @@ export const SITE = {
   location: {
     countryName: "Italy",
     countryCode: "IT",
-    timezone: "Europe/Rome",
+    timezone: "Europe/Paris",
   },
   links: {
     github: "https://github.com/Ladvace",
