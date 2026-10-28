@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prénom Nom – E-portfolio</title>
+  <meta name="description" content="E-portfolio de Prénom Nom : parcours, compétences et projets.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#accueil">Prénom Nom</a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#reflexions">Réflexions</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" aria-label="Changer de thème">🌓</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <p class="eyebrow">Bienvenue sur mon e-portfolio</p>
+    <h1>Bonjour, je suis <span class="accent">Prénom Nom</span></h1>
+    <p class="lead">Étudiant·e en [votre formation] – passionné·e par [votre domaine].</p>
+    <div class="actions">
+      <a class="btn" href="#projets">Voir mes projets</a>
+      <a class="btn btn-outline" href="#contact">Me contacter</a>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos">
+    <h2>À propos</h2>
+    <div class="two-cols">
+      <img class="avatar" src="images/photo.jpg" alt="Photo de Prénom Nom"
+           onerror="this.style.display='none'">
+      <div>
+        <p>Présentez-vous en quelques lignes : qui vous êtes, ce qui vous motive, et ce que vous recherchez (stage, alternance, emploi…).</p>
+        <p>Ajoutez un élément personnel (centres d'intérêt, engagements, voyages) pour rendre le portfolio vivant.</p>
+        <p><a class="btn btn-outline" href="documents/cv.pdf">Télécharger mon CV (PDF)</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Compétence 1</h3>
+        <p>Décrivez brièvement comment vous la maîtrisez.</p>
+        <div class="bar"><span style="width:80%"></span></div>
+      </article>
+      <article class="card">
+        <h3>Compétence 2</h3>
+        <p>Appuyez-vous sur un exemple concret.</p>
+        <div class="bar"><span style="width:65%"></span></div>
+      </article>
+      <article class="card">
+        <h3>Compétence 3</h3>
+        <p>Précisez le contexte (cours, stage, projet).</p>
+        <div class="bar"><span style="width:50%"></span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <h2>Projets</h2>
+    <div class="filters">
+      <button class="filter active" data-filter="all">Tous</button>
+      <button class="filter" data-filter="scolaire">Scolaire</button>
+      <button class="filter" data-filter="stage">Stage</button>
+      <button class="filter" data-filter="perso">Personnel</button>
+    </div>
+    <div class="grid">
+      <article class="card project" data-cat="scolaire">
+        <img src="images/projet1.jpg" alt="" onerror="this.style.display='none'">
+        <h3>Titre du projet 1</h3>
+        <p class="tags">#tag1 #tag2</p>
+        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
+        <a href="#">Voir le projet →</a>
+      </article>
+      <article class="card project" data-cat="stage">
+        <img src="images/projet2.jpg" alt="" onerror="this.style.display='none'">
+        <h3>Titre du projet 2</h3>
+        <p class="tags">#tag1 #tag3</p>
+        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
+        <a href="#">Voir le projet →</a>
+      </article>
+      <article class="card project" data-cat="perso">
+        <img src="images/projet3.jpg" alt="" onerror="this.style.display='none'">
+        <h3>Titre du projet 3</h3>
+        <p class="tags">#tag2 #tag4</p>
+        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
+        <a href="#">Voir le projet →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours">
+    <h2>Parcours</h2>
+    <ol class="timeline">
+      <li><span class="date">2025 – aujourd'hui</span><strong>Formation en cours</strong><br>Établissement, ville</li>
+      <li><span class="date">Été 2025</span><strong>Stage / expérience</strong><br>Entreprise, missions principales</li>
+      <li><span class="date">2022 – 2025</span><strong>Diplôme précédent</strong><br>Établissement, ville</li>
+    </ol>
+  </section>
+
+  <!-- RÉFLEXIONS -->
+  <section id="reflexions">
+    <h2>Réflexions &amp; bilan</h2>
+    <p>Un e-portfolio montre aussi votre capacité à prendre du recul. Rédigez ici un court bilan : ce que vous avez appris, vos difficultés, vos axes de progrès.</p>
+    <details>
+      <summary>Ce que j'ai appris cette année</summary>
+      <p>Votre texte…</p>
+    </details>
+    <details>
+      <summary>Mes difficultés et comment je les ai surmontées</summary>
+      <p>Votre texte…</p>
+    </details>
+    <details>
+      <summary>Mes objectifs pour la suite</summary>
+      <p>Votre texte…</p>
+    </details>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:prenom.nom@example.com">prenom.nom@example.com</a><br>
+      💼 <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener">LinkedIn</a><br>
+      🐙 <a href="https://github.com/votre-pseudo" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Prénom Nom – E-portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
