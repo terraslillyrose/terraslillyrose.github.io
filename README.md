@@ -1,55 +1,55 @@
-# Mon e-portfolio
+# My e-portfolio (CAM L3 – Marketing – Self-branding)
 
-Site statique (HTML / CSS / JavaScript) hébergé gratuitement avec **GitHub Pages**.
+Static site (HTML / CSS / JS) hosted free on **GitHub Pages**. No cookies, no tracking, no third-party scripts (GDPR-friendly).
 
-## Structure
+## Structure follows the N7 2026-2027 framework (6 tabs minimum)
+
+| Tab | Sub-tabs |
+|---|---|
+| Welcome | – (picture, intro note, current projects, LinkedIn, CV, interests & hobbies) |
+| Engineering course | Overview · Projects · Productions |
+| International mobility | PCE · LV2 · Future mobility (S9) |
+| Sustainability & civic engagement | – |
+| Sport & activities | – |
+| Career development | **Career project** · Internships · PEP |
+
+The **Career project** sub-tab contains everything evaluated at the end of the module (upload to Moodle by **1 November**):
+
+- [ ] CVs in English and in French (`documents/cv-en.pdf`, `documents/cv-fr.pdf`)
+- [ ] LinkedIn in English and French (optional, highly recommended) – replace the links in `index.html`
+- [ ] Elevator pitch video, 2–3 min, in English (`videos/pitch.mp4`), structure **present + (very brief) past + future**
+- [ ] 3 role model profiles analysed (My Job Glasses, alumni interviews or other)
+- [ ] 3 potential international mobility projects, each aligned with one role model
+
+## Files
 
 ```
-eportfolio/
-├── index.html      ← le contenu (textes, projets, contact)
-├── style.css       ← l'apparence (couleurs, mise en page)
-├── script.js       ← menu mobile, thème sombre, filtres de projets
-├── images/         ← photo.jpg, projet1.jpg, ... (à ajouter)
-└── documents/      ← cv.pdf, rapports, ... (à ajouter)
+index.html     ← all content (search for [ ... ] and "First Last" to replace)
+style.css      ← look (colours at the top)
+script.js      ← tabs, sub-tabs, dark mode
+images/        ← photo.jpg, pitch-poster.jpg (optional)
+documents/     ← cv-en.pdf, cv-fr.pdf
+videos/        ← pitch.mp4
 ```
 
-## Personnaliser
+Every tab and sub-tab has its own link, e.g. `https://your-pseudo.github.io/#career/project`.
 
-1. Ouvrez `index.html` et remplacez tous les textes « Prénom Nom », « Titre du projet »… par les vôtres.
-2. Ajoutez votre photo dans `images/photo.jpg`, vos visuels de projets dans `images/`, votre CV dans `documents/cv.pdf`.
-3. Changez les couleurs dans `style.css` (variable `--accent` en haut du fichier).
-4. Pour tester en local : double-cliquez sur `index.html` (ou utilisez l'extension *Live Server* de VS Code).
+## Publish on GitHub Pages
 
-## Publier sur GitHub Pages
+1. Create a **public** repository named `your-pseudo.github.io`.
+2. **Add file → Upload files**: drag all files and folders, then **Commit changes**.
+3. **Settings → Pages → Deploy from a branch → `main` / `(root)` → Save**.
+4. After 1–2 minutes the site is live at `https://your-pseudo.github.io`.
+5. Submit that link (and/or the files) on Moodle.
 
-1. Créez un compte sur https://github.com si ce n'est pas déjà fait.
-2. Cliquez sur **New repository**.
-   - Nom : `votre-pseudo.github.io` → l'adresse sera `https://votre-pseudo.github.io`
-   - (ou n'importe quel autre nom, ex. `eportfolio` → `https://votre-pseudo.github.io/eportfolio`)
-   - Visibilité : **Public**.
-3. Envoyez les fichiers :
-   - **Sans ligne de commande** : dans le dépôt, **Add file → Upload files**, glissez tout le contenu du dossier (y compris `images/` et `documents/`), puis **Commit changes**.
-   - **Avec Git** :
-     ```bash
-     git init
-     git add .
-     git commit -m "Premier jet de mon e-portfolio"
-     git branch -M main
-     git remote add origin https://github.com/votre-pseudo/votre-depot.git
-     git push -u origin main
-     ```
-4. Dans le dépôt : **Settings → Pages**.
-   - *Source* : **Deploy from a branch**
-   - *Branch* : `main` / dossier `/ (root)` → **Save**
-5. Attendez 1 à 2 minutes : l'adresse du site s'affiche en haut de la page Pages.
+## Video tips
 
-## Mettre à jour
+- GitHub refuses files > 100 MB (25 MB through the web upload). If your video is larger, upload it to YouTube as **Unlisted** and use the `<iframe>` alternative left in the comment in `index.html` (privacy-friendly `youtube-nocookie.com`).
 
-Modifiez un fichier (directement sur GitHub avec l'icône ✏️, ou en local puis `git push`) : le site se met à jour automatiquement.
+## Good practice from the course
 
-## Conseils pour un bon e-portfolio
-
-- Pour chaque projet : contexte, objectif, votre rôle, résultat, ce que vous en retirez.
-- Gardez une section de réflexion personnelle : c'est ce qui distingue un portfolio d'un simple CV.
-- Vérifiez l'affichage sur téléphone.
-- Ne publiez pas d'informations personnelles sensibles (adresse, téléphone) ni de documents confidentiels (rapports de stage soumis à confidentialité).
+- Tell each project as a story: problem → your role → methods → outcomes → lessons.
+- Keep CV, LinkedIn and e-portfolio consistent (same tone, same key messages, same UVP).
+- Use the STAR method (Situation, Task, Action, Result, And beyond?) for experiences.
+- Keep NDA / confidential work private or described without confidential details.
+- Ask a classmate to open your link and give a first impression.

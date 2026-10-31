@@ -1,153 +1,282 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lilly-Rose TERRAS – E-portfolio</title>
-  <meta name="description" content="E-portfolio de Lilly-Rose TERRAS : parcours, compétences et projets.">
+  <title>First Last – E-portfolio</title>
+  <meta name="description" content="E-portfolio of First Last, engineering student at Toulouse INP – ENSEEIHT: projects, mobility, engagement and career project.">
   <link rel="stylesheet" href="style.css">
+  <noscript><style>.tab, .subtab { display: block !important; }</style></noscript>
 </head>
 <body>
 
 <header class="site-header">
-  <a class="logo" href="#accueil">Lilly-Rose TERRAS</a>
-  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-  <nav id="nav">
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#reflexions">Réflexions</a>
-    <a href="#contact">Contact</a>
-    <button id="theme-toggle" aria-label="Changer de thème">🌓</button>
+  <a class="logo" href="#welcome">First Last</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Main tabs">
+    <a href="#welcome" data-tab="welcome">Welcome</a>
+    <a href="#engineering" data-tab="engineering">Engineering course</a>
+    <a href="#mobility" data-tab="mobility">International mobility</a>
+    <a href="#sustainability" data-tab="sustainability">Sustainability &amp; civic engagement</a>
+    <a href="#activities" data-tab="activities">Sport &amp; activities</a>
+    <a href="#career" data-tab="career">Career development</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
   </nav>
 </header>
 
 <main>
 
-  <!-- ACCUEIL -->
-  <section id="accueil" class="hero">
-    <p class="eyebrow">Bienvenue sur mon e-portfolio</p>
-    <h1>Bonjour, je suis <span class="accent">Liilly-Rose TERRAS</span></h1>
-    <p class="lead">Étudiante en Sciences du numériques – passionné·e par [votre domaine].</p>
-    <div class="actions">
-      <a class="btn" href="#projets">Voir mes projets</a>
-      <a class="btn btn-outline" href="#contact">Me contacter</a>
-    </div>
-  </section>
-
-  <!-- À PROPOS -->
-  <section id="apropos">
-    <h2>À propos</h2>
-    <div class="two-cols">
-      <img class="avatar" src="images/photo.jpg" alt="Photo de Lilly-Rose TERRAS"
-           onerror="this.style.display='none'">
-      <div>
-        <p>Présentez-vous en quelques lignes : qui vous êtes, ce qui vous motive, et ce que vous recherchez (stage, alternance, emploi…).</p>
-        <p>Ajoutez un élément personnel (centres d'intérêt, engagements, voyages) pour rendre le portfolio vivant.</p>
-        <p><a class="btn btn-outline" href="documents/cv.pdf">Télécharger mon CV (PDF)</a></p>
+<!-- ============ 1. WELCOME ============ -->
+<section id="welcome" class="tab">
+  <div class="hero">
+    <img class="avatar" src="images/photo.jpg" alt="Portrait of First Last" onerror="this.style.display='none'">
+    <div>
+      <p class="eyebrow">Welcome to my e-portfolio</p>
+      <h1>Hi, I'm <span class="accent">First Last</span></h1>
+      <p class="lead">[Your unique value proposition in one sentence: who you are, what you bring, for whom. E.g. “Electrical engineering student combining embedded systems skills and a strong international outlook, looking for …”]</p>
+      <div class="actions">
+        <a class="btn" href="documents/cv-en.pdf">CV (English)</a>
+        <a class="btn btn-outline" href="documents/cv-fr.pdf">CV (Français)</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- COMPÉTENCES -->
-  <section id="competences">
-    <h2>Compétences</h2>
+  <h2>About me</h2>
+  <p>Introductory note (5–8 lines): your background, your engineering course at Toulouse INP – ENSEEIHT, what drives you, and what you are looking for (internship, mobility, first job). Keep the same tone and key messages as on your CV and LinkedIn profile.</p>
+
+  <h2>What I'm working on now</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Current project 1</h3>
+      <p>One or two sentences: context and your role.</p>
+      <a href="#engineering/projects">See details →</a>
+    </article>
+    <article class="card">
+      <h3>Current project 2</h3>
+      <p>One or two sentences: context and your role.</p>
+      <a href="#engineering/projects">See details →</a>
+    </article>
+  </div>
+
+  <h2>Interests &amp; hobbies</h2>
+  <p>[Three or four interests, in one line each. Choose those that reveal your personality or your skills (team spirit, perseverance, creativity…).] <a href="#activities">More →</a></p>
+
+  <h2>Explore my portfolio</h2>
+  <div class="grid">
+    <a class="card tile" href="#engineering"><h3>🎓 Engineering course</h3><p>Courses, projects &amp; productions</p></a>
+    <a class="card tile" href="#mobility"><h3>🌍 International mobility</h3><p>PCE, LV2 and future mobility</p></a>
+    <a class="card tile" href="#sustainability"><h3>🌱 Sustainability &amp; civic engagement</h3><p>Commitments and impact</p></a>
+    <a class="card tile" href="#activities"><h3>🏃 Sport &amp; activities</h3><p>Beyond the classroom</p></a>
+    <a class="card tile" href="#career"><h3>🚀 Career development</h3><p>Career project, internships, PEP</p></a>
+  </div>
+</section>
+
+<!-- ============ 2. ENGINEERING COURSE ============ -->
+<section id="engineering" class="tab">
+  <h2>Engineering course</h2>
+  <div class="subnav" role="tablist">
+    <button class="subbtn" data-sub="overview">Course overview</button>
+    <button class="subbtn" data-sub="projects">Projects</button>
+    <button class="subbtn" data-sub="productions">Productions</button>
+  </div>
+
+  <div class="subtab" data-sub="overview">
+    <p>Your department, your option/specialisation, key courses and the skills they gave you. Show progression: L3 → M1 → M2.</p>
     <div class="grid">
-      <article class="card">
-        <h3>Compétence 1</h3>
-        <p>Décrivez brièvement comment vous la maîtrisez.</p>
-        <div class="bar"><span style="width:80%"></span></div>
-      </article>
-      <article class="card">
-        <h3>Compétence 2</h3>
-        <p>Appuyez-vous sur un exemple concret.</p>
-        <div class="bar"><span style="width:65%"></span></div>
-      </article>
-      <article class="card">
-        <h3>Compétence 3</h3>
-        <p>Précisez le contexte (cours, stage, projet).</p>
-        <div class="bar"><span style="width:50%"></span></div>
-      </article>
+      <article class="card"><h3>Hard skills</h3><ul><li>Skill 1 – evidence (project / course)</li><li>Skill 2 – evidence</li><li>Skill 3 – evidence</li></ul></article>
+      <article class="card"><h3>Soft skills</h3><ul><li>Skill 1 – evidence</li><li>Skill 2 – evidence</li><li>Skill 3 – evidence</li></ul></article>
     </div>
-  </section>
+  </div>
 
-  <!-- PROJETS -->
-  <section id="projets">
-    <h2>Projets</h2>
-    <div class="filters">
-      <button class="filter active" data-filter="all">Tous</button>
-      <button class="filter" data-filter="scolaire">Scolaire</button>
-      <button class="filter" data-filter="stage">Stage</button>
-      <button class="filter" data-filter="perso">Personnel</button>
-    </div>
+  <div class="subtab" data-sub="projects">
+    <p>For each project tell a short story: <strong>problem → your role → methods → outcomes → lessons learned</strong>. Add visuals, code, diagrams or reports.</p>
+    <article class="card project">
+      <h3>Project title</h3>
+      <p class="tags">#tag1 #tag2 · 2026–2027 · Team of 4</p>
+      <dl>
+        <dt>Context &amp; problem</dt><dd>…</dd>
+        <dt>My role</dt><dd>…</dd>
+        <dt>Methods &amp; tools</dt><dd>…</dd>
+        <dt>Outcomes</dt><dd>Quantified results if possible.</dd>
+        <dt>Lessons learned</dt><dd>…</dd>
+      </dl>
+      <a href="#">Report / repository / demo →</a>
+    </article>
+    <article class="card project">
+      <h3>Another project</h3>
+      <p class="tags">#tag1 #tag3</p>
+      <p>Same structure. Projects under NDA: describe them without confidential details or keep them out of the public version.</p>
+    </article>
+  </div>
+
+  <div class="subtab" data-sub="productions">
+    <p>Your best productions: reports, posters, code snippets, CAD designs, diagrams, presentations, videos…</p>
     <div class="grid">
-      <article class="card project" data-cat="scolaire">
-        <img src="images/projet1.jpg" alt="" onerror="this.style.display='none'">
-        <h3>Titre du projet 1</h3>
-        <p class="tags">#tag1 #tag2</p>
-        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
-        <a href="#">Voir le projet →</a>
+      <article class="card"><h3>Production 1</h3><p>Type · date · short description.</p><a href="#">Open →</a></article>
+      <article class="card"><h3>Production 2</h3><p>Type · date · short description.</p><a href="#">Open →</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. INTERNATIONAL MOBILITY ============ -->
+<section id="mobility" class="tab">
+  <h2>International mobility</h2>
+  <div class="subnav" role="tablist">
+    <button class="subbtn" data-sub="pce">PCE</button>
+    <button class="subbtn" data-sub="lv2">LV2</button>
+    <button class="subbtn" data-sub="future">Future mobility (S9)</button>
+  </div>
+
+  <div class="subtab" data-sub="pce">
+    <p>Your intercultural experience (PCE): where, when, what you did, what you learned about yourself and others. Add photos and a short reflection.</p>
+  </div>
+  <div class="subtab" data-sub="lv2">
+    <p>Your second foreign language: level, certifications, practice, projects.</p>
+  </div>
+  <div class="subtab" data-sub="future">
+    <p>The 17-week international mobility planned in semester 9. My three potential projects, each aligned with one of my role models, are detailed in my
+      <a href="#career/project">Career project</a>.</p>
+    <p class="note">English level B2+ is also required in S9: add your latest test result or certificate here.</p>
+  </div>
+</section>
+
+<!-- ============ 4. SUSTAINABILITY & CIVIC ENGAGEMENT ============ -->
+<section id="sustainability" class="tab">
+  <h2>Sustainability &amp; civic engagement</h2>
+  <p>Civic engagement (40 hours to validate in S9) and sustainability commitments: association, volunteering, eco-responsible initiatives, courses on environmental issues.</p>
+  <div class="grid">
+    <article class="card"><h3>Engagement 1</h3><p>Organisation · role · hours · what it brought to others and to you.</p></article>
+    <article class="card"><h3>Engagement 2</h3><p>Organisation · role · hours · impact.</p></article>
+  </div>
+</section>
+
+<!-- ============ 5. SPORT & OTHER ACTIVITIES ============ -->
+<section id="activities" class="tab">
+  <h2>Sport &amp; other activities</h2>
+  <p>Sport, music, student life, side projects, travels… Link each activity to a quality an employer values (discipline, teamwork, creativity, leadership).</p>
+  <div class="grid">
+    <article class="card"><h3>Activity 1</h3><p>Level / duration · what it says about me.</p></article>
+    <article class="card"><h3>Activity 2</h3><p>Level / duration · what it says about me.</p></article>
+    <article class="card"><h3>Activity 3</h3><p>Level / duration · what it says about me.</p></article>
+  </div>
+</section>
+
+<!-- ============ 6. CAREER DEVELOPMENT ============ -->
+<section id="career" class="tab">
+  <h2>Career development</h2>
+  <div class="subnav" role="tablist">
+    <button class="subbtn" data-sub="project">Career project</button>
+    <button class="subbtn" data-sub="internships">Internships</button>
+    <button class="subbtn" data-sub="pep">PEP</button>
+  </div>
+
+  <!-- CAREER PROJECT = evaluated deliverables -->
+  <div class="subtab" data-sub="project">
+
+    <h3>1. My CVs</h3>
+    <p>Tailored to the roles I target: keywords, evidence-based achievements, simple one-page format.</p>
+    <div class="actions">
+      <a class="btn" href="documents/cv-en.pdf">CV – English (PDF)</a>
+      <a class="btn" href="documents/cv-fr.pdf">CV – Français (PDF)</a>
+    </div>
+
+    <h3>2. LinkedIn <span class="badge">optional but recommended</span></h3>
+    <div class="actions">
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn profile – English</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn profile – Français</a>
+    </div>
+
+    <h3>3. Elevator pitch – my Unique Value Proposition (2–3 min, English)</h3>
+    <div class="video">
+      <video controls preload="metadata" poster="images/pitch-poster.jpg">
+        <source src="videos/pitch.mp4" type="video/mp4">
+        Your browser cannot play this video. <a href="videos/pitch.mp4">Download it</a>.
+      </video>
+      <!-- Alternative if the file is too large for GitHub (limit 100 MB):
+           upload to YouTube as "Unlisted" and replace <video> by:
+           <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" allowfullscreen loading="lazy"></iframe> -->
+    </div>
+    <p><strong>Structure:</strong> present → (very brief) past → future. It draws on my role models and mobility projects below.</p>
+
+    <h3>4. Three role models &amp; three aligned mobility projects</h3>
+    <p>Role models analysed via <em>My Job Glasses</em>, alumni interviews or other means. Each one is linked to a potential international mobility project.</p>
+
+    <div class="pair">
+      <article class="card">
+        <span class="badge">Role model 1</span>
+        <h3>Name – Job title, Company</h3>
+        <p><em>Source: My Job Glasses / alumni interview / other</em></p>
+        <ul>
+          <li>Career path:</li>
+          <li>Key skills &amp; qualities:</li>
+          <li>What I take from it for my own path:</li>
+        </ul>
       </article>
-      <article class="card project" data-cat="stage">
-        <img src="images/projet2.jpg" alt="" onerror="this.style.display='none'">
-        <h3>Titre du projet 2</h3>
-        <p class="tags">#tag1 #tag3</p>
-        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
-        <a href="#">Voir le projet →</a>
-      </article>
-      <article class="card project" data-cat="perso">
-        <img src="images/projet3.jpg" alt="" onerror="this.style.display='none'">
-        <h3>Titre du projet 3</h3>
-        <p class="tags">#tag2 #tag4</p>
-        <p>Contexte, objectif, votre rôle et le résultat obtenu.</p>
-        <a href="#">Voir le projet →</a>
+      <article class="card accent-card">
+        <span class="badge">Mobility project 1</span>
+        <h3>Country · Organisation · Type</h3>
+        <ul>
+          <li>Duration / period (17 weeks, S9):</li>
+          <li>Why it matches role model 1:</li>
+          <li>What I want to learn:</li>
+        </ul>
       </article>
     </div>
-  </section>
 
-  <!-- PARCOURS -->
-  <section id="parcours">
-    <h2>Parcours</h2>
-    <ol class="timeline">
-      <li><span class="date">2025 – aujourd'hui</span><strong>Formation en cours</strong><br>Établissement, ville</li>
-      <li><span class="date">Été 2025</span><strong>Stage / expérience</strong><br>Entreprise, missions principales</li>
-      <li><span class="date">2022 – 2025</span><strong>Diplôme précédent</strong><br>Établissement, ville</li>
-    </ol>
-  </section>
+    <div class="pair">
+      <article class="card">
+        <span class="badge">Role model 2</span>
+        <h3>Name – Job title, Company</h3>
+        <p><em>Source:</em></p>
+        <ul><li>Career path:</li><li>Key skills &amp; qualities:</li><li>What I take from it:</li></ul>
+      </article>
+      <article class="card accent-card">
+        <span class="badge">Mobility project 2</span>
+        <h3>Country · Organisation · Type</h3>
+        <ul><li>Duration / period:</li><li>Why it matches role model 2:</li><li>What I want to learn:</li></ul>
+      </article>
+    </div>
 
-  <!-- RÉFLEXIONS -->
-  <section id="reflexions">
-    <h2>Réflexions &amp; bilan</h2>
-    <p>Un e-portfolio montre aussi votre capacité à prendre du recul. Rédigez ici un court bilan : ce que vous avez appris, vos difficultés, vos axes de progrès.</p>
-    <details>
-      <summary>Ce que j'ai appris cette année</summary>
-      <p>Votre texte…</p>
-    </details>
-    <details>
-      <summary>Mes difficultés et comment je les ai surmontées</summary>
-      <p>Votre texte…</p>
-    </details>
-    <details>
-      <summary>Mes objectifs pour la suite</summary>
-      <p>Votre texte…</p>
-    </details>
-  </section>
+    <div class="pair">
+      <article class="card">
+        <span class="badge">Role model 3</span>
+        <h3>Name – Job title, Company</h3>
+        <p><em>Source:</em></p>
+        <ul><li>Career path:</li><li>Key skills &amp; qualities:</li><li>What I take from it:</li></ul>
+      </article>
+      <article class="card accent-card">
+        <span class="badge">Mobility project 3</span>
+        <h3>Country · Organisation · Type</h3>
+        <ul><li>Duration / period:</li><li>Why it matches role model 3:</li><li>What I want to learn:</li></ul>
+      </article>
+    </div>
+  </div>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      📧 <a href="mailto:prenom.nom@example.com">prenom.nom@example.com</a><br>
-      💼 <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener">LinkedIn</a><br>
-      🐙 <a href="https://github.com/votre-pseudo" target="_blank" rel="noopener">GitHub</a>
-    </p>
-  </section>
+  <div class="subtab" data-sub="internships">
+    <p>Internships in S6 and S8: company, mission, STAR summary (Situation · Task · Action · Result · And beyond?), skills developed.</p>
+    <article class="card">
+      <h3>Internship title – Company (duration)</h3>
+      <ul>
+        <li><strong>Situation:</strong> …</li>
+        <li><strong>Task:</strong> …</li>
+        <li><strong>Action:</strong> …</li>
+        <li><strong>Result:</strong> quantified if possible</li>
+        <li><strong>And beyond?</strong> what I learned / what it changes for my career</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="subtab" data-sub="pep">
+    <p>Personal and Professional Project (PEP): your objectives, the steps already taken, feedback received (PPP jury, alumni, staff) and next steps.</p>
+  </div>
+</section>
 
 </main>
 
 <footer>
-  <p>© <span id="year"></span> Lilly-Rose TERRAS – E-portfolio</p>
+  <p>© <span id="year"></span> First Last – Toulouse INP – ENSEEIHT · E-portfolio</p>
+  <p class="small">This site uses no cookies and no tracking. Personal data shown is limited to what I choose to publish.</p>
 </footer>
 
 <script src="script.js"></script>
