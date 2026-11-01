@@ -3,6 +3,13 @@ const DEFAULT_SUB = { engineering: "overview", mobility: "pce", career: "project
 
 const navLinks = document.querySelectorAll("nav a[data-tab]");
 const tabs = document.querySelectorAll(".tab");
+const navEl = document.getElementById("nav");
+const menuBtn = document.querySelector(".menu-toggle");
+
+function closeMenu() {
+  navEl.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}
 
 function show() {
   // hash format: #tab or #tab/sub
@@ -10,7 +17,12 @@ function show() {
   const tab = TABS.includes(rawTab) ? rawTab : "welcome";
 
   tabs.forEach(t => t.classList.toggle("active", t.id === tab));
-  navLinks.forEach(a => a.classList.toggle("active", a.dataset.tab === tab));
+  navLinks.forEach(a => {
+    const on = a.dataset.tab === tab;
+    a.classList.toggle("active", on);
+    if (on) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  });
 
   const section = document.getElementById(tab);
   const subs = section.querySelectorAll(".subtab");
@@ -18,11 +30,13 @@ function show() {
     const names = [...subs].map(s => s.dataset.sub);
     const sub = names.includes(rawSub) ? rawSub : DEFAULT_SUB[tab];
     subs.forEach(s => s.classList.toggle("active", s.dataset.sub === sub));
-    section.querySelectorAll(".subbtn").forEach(b =>
-      b.classList.toggle("active", b.dataset.sub === sub)
-    );
+    section.querySelectorAll(".subbtn").forEach(b => {
+      const on = b.dataset.sub === sub;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-pressed", on);
+    });
   }
-  document.getElementById("nav").classList.remove("open");
+  closeMenu();
   window.scrollTo({ top: 0 });
 }
 
@@ -41,9 +55,8 @@ show();
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Mobile menu
-const menuBtn = document.querySelector(".menu-toggle");
 menuBtn.addEventListener("click", () => {
-  const open = document.getElementById("nav").classList.toggle("open");
+  const open = navEl.classList.toggle("open");
   menuBtn.setAttribute("aria-expanded", open);
 });
 

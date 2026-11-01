@@ -24,8 +24,8 @@ The **Career project** sub-tab contains everything evaluated at the end of the m
 ## Files
 
 ```
-index.html     ← all content (search for [ ... ] and "First Last" to replace)
-style.css      ← look (colours at the top)
+index.html     ← all content (search for "[" and "…" to find the text still to write)
+style.css      ← look (colours at the top: --bg is the light blue background)
 script.js      ← tabs, sub-tabs, dark mode
 images/        ← photo.jpg, pitch-poster.jpg (optional)
 documents/     ← cv-en.pdf, cv-fr.pdf
@@ -33,6 +33,10 @@ videos/        ← pitch.mp4
 ```
 
 Every tab and sub-tab has its own link, e.g. `https://your-pseudo.github.io/#career/project`.
+
+## Change the background colour
+
+In `style.css`, edit `--bg` (page) and the gradient on `body` (two blues). Cards use `--bg-alt` (white).
 
 ## Publish on GitHub Pages
 
