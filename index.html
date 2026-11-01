@@ -6,6 +6,10 @@
   <title>Lilly-Rose TERRAS – E-portfolio</title>
   <meta name="description" content="E-portfolio of Lilly-Rose TERRAS, engineering student at Toulouse INP – ENSEEIHT: projects, mobility, engagement and career project.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .hero.no-photo{display:flex;justify-content:center;text-align:center}
+    .hero.no-photo .actions{justify-content:center}
+  </style>
   <noscript><style>.tab, .subtab { display: block !important; }</style></noscript>
 </head>
 <body>
@@ -29,7 +33,7 @@
 <!-- ============ 1. WELCOME ============ -->
 <section id="welcome" class="tab">
   <div class="hero">
-    <img class="avatar" src="images/photo.jpg" alt="Portrait of Lilly-Rose TERRAS" onerror="this.style.display='none'">
+    <img class="avatar" src="images/photo.jpg" alt="Portrait of Lilly-Rose TERRAS" onerror="this.style.display='none';this.closest('.hero').classList.add('no-photo')">
     <div>
       <p class="eyebrow">Welcome to my e-portfolio</p>
       <h1>Hi, I'm <span class="accent">Lilly-Rose TERRAS</span></h1>
@@ -37,7 +41,6 @@
       <div class="actions">
         <a class="btn" href="documents/cv-en.pdf">CV (English)</a>
         <a class="btn btn-outline" href="documents/cv-fr.pdf">CV (Français)</a>
-        <a class="btn btn-outline" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </div>
@@ -62,7 +65,7 @@
     <a class="card tile" href="#mobility"><h3>🌍 International mobility</h3><p>PCE, LV2 and future mobility</p></a>
     <a class="card tile" href="#sustainability"><h3>🌱 Sustainability &amp; civic engagement</h3><p>Commitments and impact</p></a>
     <a class="card tile" href="#activities"><h3>🏃 Sport &amp; activities</h3><p>Beyond the classroom</p></a>
-    <a class="card tile" href="#career"><h3>🚀 Career development</h3><p>Career project, internships, PEP</p></a>
+    <a class="card tile" href="#career"><h3>🚀 Career development</h3><p>Career project, CVs &amp; pitch</p></a>
   </div>
 </section>
 
@@ -98,7 +101,6 @@
           <li><strong>Creativity &amp; multimedia</strong> – active member of the school television club, TVn7.</li>
         </ul>
       </article>
-    </div>
     </div>
   </div>
 
@@ -349,8 +351,6 @@
   <h2>Career development</h2>
   <div class="subnav" role="tablist">
     <button class="subbtn" data-sub="project">Career project</button>
-    <button class="subbtn" data-sub="internships">Internships</button>
-    <button class="subbtn" data-sub="pep">PEP</button>
   </div>
 
    <!-- CAREER PROJECT -->
@@ -375,7 +375,7 @@
     </div>
     <p><strong>Structure:</strong> present → (very brief) past → future.</p>
   </div>
- 
+</section>
 
 </main>
 
